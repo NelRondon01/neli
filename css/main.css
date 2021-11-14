@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "HWTArtz";
+  src: url("../font/HWTArtzW00Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "HWTArtz";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+body {
+  width: 100vw;
+  background: #eee;
+  background: linear-gradient(#0066c5, #4fbeff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  padding: 10px 20px;
+  color: #fff;
+  background: #0066c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.8em;
+}
+header img {
+  margin: 0 5px;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div:nth-child(2) {
+  font-size: 70%;
+}
+
+h1 {
+  color: #fff;
+  background: rgba(79, 190, 255, 0.5);
+  padding: 10px 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.fecha {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: rgba(79, 190, 255, 0.5);
+  padding: 20px 10px;
+  font-size: 1.4em;
+}
+
+.cora {
+  width: 1em;
+}

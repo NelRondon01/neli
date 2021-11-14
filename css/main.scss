@@ -1,0 +1,79 @@
+$color1: #0066c5;
+$color2: #4fbeff;
+$color3: #eee;
+$color4: #AFDEDC;
+$color5: #EA7317;
+
+@font-face{
+    font-family: "HWTArtz";
+    src: url("../font/HWTArtzW00Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HWTArtz";
+}
+
+@mixin displayF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+body{
+    width: 100vw;
+    background: $color3;
+    background: linear-gradient($color1,$color2);
+    min-height: 100vh;
+    @include displayF();
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    background: $color1;
+    @include displayF();
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    font-size: 1.8em;
+    img{margin: 0 5px;}
+    div{
+        @include displayF();
+        &:nth-child(2){
+            font-size: 70%;
+        }
+    }
+}
+h1{
+    color: #fff;
+    background: rgba($color2, .5);
+    padding: 10px 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.fecha{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: rgba($color2, .5);
+    padding: 20px 10px;
+    font-size: 1.4em;
+
+}
+
+.cora{
+    width: 1em;
+}
