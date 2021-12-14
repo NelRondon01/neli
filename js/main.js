@@ -1,6 +1,6 @@
 $(document).ready(function () {
     setInterval(() => {
-        let fecha_eli = new Date(2021, 9, 14, 23, 20);
+        let fecha_eli = new Date(2021, 9, 14);
         let fecha = new Date();
 
         let vals = [0, 0, 0, 0, 0, 0, 0]
